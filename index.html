@@ -1,1 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Ingeniería Civil Industrial</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Malla Curricular – Ingeniería Civil Industrial</h1>
+
+<!-- CICLO INICIAL -->
+<section class="ciclo">
+  <h2>🟦 Ciclo Inicial (1° y 2° año)</h2>
+
+  <div class="malla">
+
+    <!-- SEMESTRE 1 -->
+    <div class="semestre">
+      <h3>Semestre 1</h3>
+      <div class="ramo" data-id="mat">Matemáticas</div>
+      <div class="ramo" data-id="quim">Química</div>
+      <div class="ramo" data-id="taller1">Taller de Ingeniería I</div>
+      <div class="ramo" data-id="herr">Herramientas Informáticas</div>
+      <div class="ramo" data-id="ing_conv">Inglés: Taller de Conversación</div>
+    </div>
+
+    <!-- SEMESTRE 2 -->
+    <div class="semestre">
+      <h3>Semestre 2</h3>
+      <div class="ramo bloqueado" data-id="calc1" data-prereq="mat">
+        Cálculo I: Diferencial e Integral
+      </div>
+      <div class="ramo bloqueado" data-id="algebra" data-prereq="mat">
+        Álgebra Lineal
+      </div>
+      <div class="ramo bloqueado" data-id="fis1" data-prereq="mat">
+        Física I
+      </div>
+      <div class="ramo bloqueado" data-id="taller2" data-prereq="taller1">
+        Taller de Ingeniería II
+      </div>
+      <div class="ramo" data-id="prog1">Programación I</div>
+    </div>
+
+    <!-- SEMESTRE 3 -->
+    <div class="semestre">
+      <h3>Semestre 3</h3>
+      <div class="ramo bloqueado" data-id="calc_var" data-prereq="calc1">
+        Cálculo en Varias Variables
+      </div>
+      <div class="ramo bloqueado" data-id="fis2" data-prereq="fis1">
+        Física II
+      </div>
+      <div class="ramo bloqueado" data-id="taller3" data-prereq="taller2">
+        Taller de Ingeniería III
+      </div>
+      <div class="ramo bloqueado" data-id="prog2" data-prereq="prog1">
+        Programación II
+      </div>
+      <div class="ramo" data-id="ing1">Inglés I</div>
+    </div>
+
+    <!-- SEMESTRE 4 -->
+    <div class="semestre">
+      <h3>Semestre 4</h3>
+      <div class="ramo bloqueado" data-id="edo" data-prereq="calc_var">
+        Ecuaciones Diferenciales
+      </div>
+      <div class="ramo bloqueado" data-id="discretas" data-prereq="algebra">
+        Matemáticas Discretas
+      </div>
+      <div class="ramo bloqueado" data-id="fis3" data-prereq="fis2">
+        Física III
+      </div>
+      <div class="ramo bloqueado" data-id="taller4" data-prereq="taller3">
+        Taller de Ingeniería IV
+      </div>
+      <div class="ramo" data-id="ing2">Inglés II</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CICLO LICENCIATURA -->
+<section class="ciclo">
+  <h2>🟩 Ciclo de Licenciatura (3° y 4° año)</h2>
+
+  <div class="malla">
+
+    <!-- SEMESTRE 5 -->
+    <div class="semestre">
+      <h3>Semestre 5</h3>
+      <div class="ramo bloqueado" data-id="prob" data-prereq="edo">
+        Probabilidades y Estadísticas Aplicadas
+      </div>
+      <div class="ramo bloqueado" data-id="opt" data-prereq="discretas">
+        Optimización
+      </div>
+      <div class="ramo bloqueado" data-id="fis4" data-prereq="fis3">
+        Física IV
+      </div>
+      <div class="ramo">Micro y Macroeconomía</div>
+      <div class="ramo">Electivo I</div>
+      <div class="ramo" data-id="ing3">Inglés III</div>
+    </div>
+
+    <!-- SEMESTRE 6 -->
+    <div class="semestre">
+      <h3>Semestre 6</h3>
+      <div class="ramo bloqueado" data-id="io" data-prereq="prob">
+        Investigación de Operaciones
+      </div>
+      <div class="ramo">Emprendimiento e Innovación</div>
+      <div class="ramo">Evaluación de Proyectos</div>
+      <div class="ramo">Introducción a las TICA</div>
+      <div class="ramo">Electivo II</div>
+      <div class="ramo" data-id="ing4">Inglés IV</div>
+    </div>
+
+    <!-- SEMESTRE 7 -->
+    <div class="semestre">
+      <h3>Semestre 7</h3>
+      <div class="ramo bloqueado" data-id="go1" data-prereq="io">
+        Gestión de Operaciones I
+      </div>
+      <div class="ramo">Marketing</div>
+      <div class="ramo">Gestión de Recursos Humanos</div>
+      <div class="ramo">Ingeniería de Datos</div>
+      <div class="ramo">Electivo Disciplinario I</div>
+    </div>
+
+    <!-- SEMESTRE 8 -->
+    <div class="semestre">
+      <h3>Semestre 8</h3>
+      <div class="ramo bloqueado" data-id="go2" data-prereq="go1">
+        Gestión de Operaciones II
+      </div>
+      <div class="ramo">Finanzas</div>
+      <div class="ramo">Gestión de Proyectos (PMO)</div>
+      <div class="ramo">Taller de Proyecto TICA</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CICLO PROFESIONAL -->
+<section class="ciclo">
+  <h2>🟪 Ciclo Profesional (5° año)</h2>
+
+  <div class="malla">
+
+    <!-- SEMESTRE 9 -->
+    <div class="semestre">
+      <h3>Semestre 9</h3>
+      <div class="ramo bloqueado" data-id="titulo1" data-prereq="go2">
+        Taller de Título I
+      </div>
+      <div class="ramo">Gestión Estratégica</div>
+      <div class="ramo">Derecho para la Ingeniería</div>
+      <div class="ramo">Electivo Disciplinario II</div>
+    </div>
+
+    <!-- SEMESTRE 10 -->
+    <div class="semestre">
+      <h3>Semestre 10</h3>
+      <div class="ramo bloqueado" data-id="titulo2" data-prereq="titulo1">
+        Taller de Título II
+      </div>
+      <div class="ramo">Electivo Disciplinario III</div>
+      <div class="ramo">Electivo Disciplinario IV</div>
+      <div class="ramo">Electivo Disciplinario V</div>
+    </div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
 
